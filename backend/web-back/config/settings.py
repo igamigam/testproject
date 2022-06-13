@@ -26,16 +26,10 @@ SECRET_KEY = '1_vj5u9p3nm4fwufe_96e9^6li1htp9avbg8+7*i#h%klp#&0='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'http://localhost',
-    'http://localhost:3000',
-    ]
-
-CORS_ORIGIN_ALLOW_ALL = False
+ALLOWED_HOSTS = ['*']
 CORS_ORIGIN_WHITELIST = (
-       'http://localhost',
-       'http://localhost:3000',
-       )
+    'http://localhost'
+)
 
 # Application definition
 
@@ -88,8 +82,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
-
-
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
@@ -129,7 +121,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # 開発環境下で静的ファイルを参照する先
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'))
 
 # 本番環境で静的ファイルを参照する先
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
