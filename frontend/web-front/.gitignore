@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+../../mysql_volume
+/.next
 /.pnp
 .pnp.js
 
