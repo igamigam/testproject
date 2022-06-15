@@ -1,3 +1,0 @@
-GRANT ALL PRIVILEGES ON test_testList.* TO 'user'@'%';
-
-FLUSH PRIVILEGES;
